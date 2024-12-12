@@ -63,6 +63,7 @@ Represented directly at the lowest level of the language.
 * `string`
 * `boolean`
 * `null`
+* `any`
 
 #### Containers
 Collection of references to other objects.
@@ -102,7 +103,7 @@ After importing a module, all it's defined objects are accessible via notation: 
 * array subscription (access by index): `array1[0]`
 * map: `(Name="Mark", Age=25)`
 * map attribute reference: `mapname.Attribute1` - only attributes starting with a capital letter can be accessed
-* function call: `someFunction(arg1, arg2, arg3)`
+* function call: `SomeFunction(arg1, arg2, arg3)`
 * arithmetic: `+ - * / ** %`
 * formatting: `%`
 * comparison: `> < >= <= == !=`
@@ -126,6 +127,18 @@ After importing a module, all it's defined objects are accessible via notation: 
 * `function NAME(...args) RETURNVALUE \n\t BODY` - function definition
 * `contract NAME \n\t BODY` - contract definition
 * `enum NAME \n\t BODY` - enum definition
+
+### Built-in objects
+#### Contracts
+* `Error` - error object containing error code and stacktrace information.
+
+#### Functions
+* `abs(value number) number`
+* `round(value number)`
+* `floor(value number)`
+* `ceil(value number)`
+* `convert(from any, to any) any` - try to convert from one value to another
+* `len(value any)` - try to calculate length of a value
 
 ## Explanation
 ### Error handling
