@@ -72,7 +72,7 @@ Collection of references to other objects.
 * `function` - special case of `map`, accepting input, having instruction set and giving output.
 
 ### Contracts
-Yon programming language does not have custom types aside from built-in primitives adn containers, but it has `contracts`. A contract is an agreement of required fields and their values that an object should have to be considered compliant to the contract. There is a special contract - `enum` which defines a set of integer numbers which can be a sole value of an object compliant to the contract.
+Yon programming language does not have custom types aside from built-in primitives and containers, but it has `contracts`. A contract is an agreement of required fields and their values that an object should have to be considered compliant to the contract. There is a special contract - `enum` which defines a set of integer numbers which can be a sole value of an object compliant to the contract.
 
 Contract compliance is checked with keyword `is`: `OBJECT is CONTRACT` will return `true` if `OBJECT` has all fields that `CONTRACT` defined as well as correct built-in types of values for them.
 
